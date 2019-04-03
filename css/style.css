@@ -12,9 +12,11 @@ body, html {
 }
 
 body {
-	background-color: #000;
+	background-color: #fafafa;
 	font-family: Trebuchet MS, Helvetica;
 }
+
+/* Шапка сайта */
 
 header {
 	width: 100%;
@@ -59,6 +61,8 @@ header #about {
 	margin-right: 7%;
 }
 
+/* Стили для фиксированной шапки */
+
 .fixed {
 	z-index: 5000;
 	background-color: #fff;
@@ -76,6 +80,8 @@ header.fixed #logo {
 .fixed #about a:hover {
 	color: #7c7c7c;
 }
+
+/* Стили для разных экранов */
 
 @media (min-width: 701px) {
 	#logo {
@@ -102,4 +108,70 @@ header.fixed #logo {
 		width: 100%;
 	}
 
+}
+
+/* Главный блок на сайте */
+
+#top {
+	width: 100%;
+	height: 1000px;
+	background-image: url("https://photography.gseosem.com/wp-content/plugins/wp-o-matic/cache201609/4885f88c13_938e6b8c90ef5d9b6156f1338a0dcd07.jpg");
+	background-blend-mode: multiply; /* для нескольких слоев изображений*/
+	background-color: #2e3a44;
+	background-size: cover; /*На всю ширину блока*/
+	text-align: center;
+	color: #fff;	
+}
+
+@media (min-width: 1001px) {
+	#top {
+		font-size: 3em;
+	}
+}
+
+@media (max-width: 1000px) and (min-width: 651px){
+	#top {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 650px) {
+	#top {
+		font-size: 1.3em;
+		padding-top: 30%;
+	}
+}
+
+#top h1 {
+	padding-top: 20%;
+}
+
+#top h3 {
+	color:#ccc;
+}
+
+/* Блок с возможностями */
+
+#main {
+	padding: 100px 20%;
+	width: 60%;
+	float: left;
+	background-color: #f6f6f6;
+	border-top: 2px solid silver;
+	color: #484848;
+	font-size: 1.3em;
+}
+
+#main div {
+	width: 48%;
+	margin-right: 2%;
+	float: left;
+}
+
+#main h2 {
+	font-size: 3em;
+}
+
+#main span {
+	color: #a0a0a0;
 }
